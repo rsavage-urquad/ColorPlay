@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Test</title>
+    <style>
+        body {
+            color: #000000;
+            font-family: "Segoe UI","Helvetica Neue",Arial;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        #content1, #content2 {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+
+        }
+
+        #content1 div, #content2 div {
+            text-align: center;
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        #content1 div:nth-child(8), #content2 div {
+            border-right: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Lighten</h2>
+    <div id="content1">
+        <div>Black</div>
+        <div>White</div>
+        <div>Red</div>
+        <div>Orange</div>
+        <div>Yellow</div>
+        <div>Green</div>
+        <div>Blue</div>
+        <div>Purple</div>
+    </div>
+
+    <br/>
+
+    <h2>Darken</h2>
+    <div id="content2">
+        <div>Black</div>
+        <div>White</div>
+        <div>Red</div>
+        <div>Orange</div>
+        <div>Yellow</div>
+        <div>Green</div>
+        <div>Blue</div>
+        <div>Purple</div>
+    </div>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="ColorPlay.js"></script>
